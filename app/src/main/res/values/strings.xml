@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Task</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="screen_1">Screen 1</string>
+    <string name="screen_2">Screen 2</string>
+    <string name="screen_3">Screen 3</string>
+    <string name="screen_4">Screen 4</string>
+    <string name="go_to_screen_2">Go to screen 2</string>
+    <string name="masukan_nama">Masukan Nama</string>
+    <string name="go_to_screen_4">Go to screen 4</string>
+    <string name="masukan_usia">Masukan Usia</string>
+    <string name="masukan_alamat">Masukan alamat</string>
+    <string name="masukan_pekerjaan">masukan Pekerjaan</string>
+    <string name="go_to_screen_3">Go to screen 3</string>
+    <string name="back_to_screen_3">Back to screen 3</string>
+</resources>
