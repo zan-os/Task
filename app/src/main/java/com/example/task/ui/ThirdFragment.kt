@@ -26,6 +26,20 @@ class ThirdFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val getNameBundle = arguments?.getString(EXTRA_NAME)
         binding.textViewName.text = getNameBundle
+
+        binding.buttonThirdScreen.setOnClickListener {
+            val fourthFragment = FourthFragment()
+            val fragmentManager = parentFragmentManager
+            val fragmentTransaction: FragmentTransaction = fragmentManager.beginTransaction()
+
+            fragmentTransaction.replace(
+                R.id.frame_layout_container,
+                fourthFragment,
+                FourthFragment::class.java.simpleName
+            )
+            fragmentTransaction.addToBackStack(null)
+            fragmentTransaction.commit()
+        }
     }
 
     override fun onDestroyView() {
