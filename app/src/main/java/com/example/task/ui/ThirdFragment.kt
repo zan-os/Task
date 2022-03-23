@@ -26,8 +26,6 @@ class ThirdFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val getNameBundle = arguments?.getString(EXTRA_NAME)
         binding.textViewName.text = getNameBundle
-
-
     }
 
     override fun onDestroyView() {
