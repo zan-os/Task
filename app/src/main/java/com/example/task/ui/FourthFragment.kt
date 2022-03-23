@@ -29,7 +29,7 @@ class FourthFragment : Fragment() {
             val fragmentManager = parentFragmentManager
             val fragmentTransaction: FragmentTransaction = fragmentManager.beginTransaction()
 
-            val getAgeInput = binding.editTextAge.text.toString().toInt()
+            val getAgeInput = binding.editTextAge.text.toString().toIntOrNull() ?: 0
             val getAddressInput = binding.editTextAddress.text.toString()
             val getJobInput = binding.editTextJob.text.toString()
 
