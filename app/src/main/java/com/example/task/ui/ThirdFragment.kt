@@ -24,4 +24,11 @@ class ThirdFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
+    companion object{
+        const val EXTRA_ADDRESS = "extraAddress"
+        const val EXTRA_AGE = "extraAge"
+        const val EXTRA_JOB = "extraJob"
+        const val EXTRA_NAME = "extraName"
+    }
 }
