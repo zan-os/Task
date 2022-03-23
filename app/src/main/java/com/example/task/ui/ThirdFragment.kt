@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
+import com.example.task.R
 import com.example.task.databinding.FragmentThirdBinding
 
 class ThirdFragment : Fragment() {
@@ -20,12 +22,20 @@ class ThirdFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val getNameBundle = arguments?.getString(EXTRA_NAME)
+        binding.textViewName.text = getNameBundle
+
+
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
 
-    companion object{
+    companion object {
         const val EXTRA_ADDRESS = "extraAddress"
         const val EXTRA_AGE = "extraAge"
         const val EXTRA_JOB = "extraJob"
