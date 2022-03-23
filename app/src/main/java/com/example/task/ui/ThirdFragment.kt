@@ -25,7 +25,13 @@ class ThirdFragment : Fragment() {
             val getAgeBundle = bundle.getInt(EXTRA_AGE)
             val getAddressBundle = bundle.getString(EXTRA_ADDRESS)
 
-            binding.textViewAge.text = getAgeBundle.toString()
+            val getOddOrEven = if (getAgeBundle %2 == 0){
+                "$getAgeBundle, Usia anda bernilai genap"
+            } else {
+                "$getAgeBundle, Usia anda bernilai ganjil"
+            }
+
+            binding.textViewAge.text = getOddOrEven
             binding.textViewAge.visibility = View.VISIBLE
 
             binding.textViewAddress.text = getAddressBundle
